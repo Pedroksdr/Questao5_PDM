@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ResumoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resumo do Pedido"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="24dp"
+        android:textColor="#a3283a"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvSabores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sabores: "
+                android:textSize="18sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvTamanho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tamanho: "
+                android:textSize="18sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvPagamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pagamento: "
+                android:textSize="18sp"
+                android:layout_marginBottom="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvValorTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Valor Total: "
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#a3283a" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnNovoPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fazer Novo Pedido"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:backgroundTint="#a3283a"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    </LinearLayout>
+
+</LinearLayout>

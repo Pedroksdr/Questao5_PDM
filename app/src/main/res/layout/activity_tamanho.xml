@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".TamanhoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tamanho e Pagamento"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:textColor="#a3283a"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione o tamanho:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rgTamanho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/rbPequena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pequena - R$ 25,00"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:fontFamily="monospace"/>
+
+        <RadioButton
+            android:id="@+id/rbMedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Média - R$ 35,00"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:fontFamily="monospace"/>
+
+        <RadioButton
+            android:id="@+id/rbGrande"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grande - R$ 45,00"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:fontFamily="monospace"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione o método de pagamento:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rgPagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/rbDinheiro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dinheiro"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:fontFamily="monospace"/>
+
+        <RadioButton
+            android:id="@+id/rbCartao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cartão"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:fontFamily="monospace"/>
+
+        <RadioButton
+            android:id="@+id/rbPix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PIX"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:fontFamily="monospace"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:backgroundTint="#a3283a"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    </LinearLayout>
+
+</LinearLayout>

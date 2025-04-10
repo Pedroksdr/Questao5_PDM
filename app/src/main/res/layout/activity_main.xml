@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pizzaria"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:textColor="#a3283a"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione os sabores:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="16dp" />
+
+    <CheckBox
+        android:id="@+id/chkCalabresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calabresa"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:padding="8dp" />
+
+    <CheckBox
+        android:id="@+id/chkMarguerita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marguerita"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:padding="8dp" />
+
+    <CheckBox
+        android:id="@+id/chkPortuguesa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Portuguesa"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:padding="8dp" />
+
+    <CheckBox
+        android:id="@+id/chkFrango"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frango com Catupiry"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:padding="8dp" />
+
+    <CheckBox
+        android:id="@+id/chkQuatroQueijos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quatro Queijos"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:padding="8dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="198dp"
+        app:srcCompat="@drawable/pizza" />
+
+    <Button
+        android:id="@+id/btnProximo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        android:text="Próximo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:backgroundTint="#a3283a"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    </LinearLayout>
+
+</LinearLayout>
